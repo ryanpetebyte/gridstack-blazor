@@ -188,11 +188,15 @@ public sealed record GsGridOptions
     /// </summary>
     [JsonPropertyName("placeholderText")]
     public string? PlaceholderText { get; set; }
-    
-    // TODO - resizable
-    
+
+    /// <summary>
+    /// Allows to override UI resizable options. Default is { handles: 'se', autoHide: true on desktop, false on mobile };
+    /// </summary>
+    [JsonPropertyName("resizable")]
+    public GsResizableOptions? Resizable { get; set; }
+
     // TODO - removable
-    
+
     // TODO - removableOptions
 
     /// <summary>
