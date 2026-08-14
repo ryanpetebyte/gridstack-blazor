@@ -22,7 +22,7 @@
 
 <div class="page">
     <div class="title">
-        <h3>Demo 5: Drag in widget</h3>
+        <h3>Demo 5: Drag in widget & changing resize handle</h3>
     </div>
     
     <div class="header">
@@ -92,7 +92,8 @@
         Resizable = new()
         {
             Handles = "e,w,s",
-        }
+        },
+        PrintMode = "exact"
     };
 
     private readonly GsSetupDragInSettings _dragInSettings = new()
