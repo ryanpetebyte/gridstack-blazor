@@ -11,5 +11,10 @@
     <ItemGroup>
         <PackageReference Include="Blazor-ApexCharts" Version="6.1.0" />
     </ItemGroup>
-    
+
+	<ItemGroup>
+		<None Include="wwwroot\lib\gridstack-all.js" />
+		<None Include="wwwroot\lib\gridstack.min.css" />
+	</ItemGroup>
+
 </Project>
