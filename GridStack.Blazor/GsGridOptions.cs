@@ -194,6 +194,7 @@ public sealed record GsGridOptions
     /// <para>- 'flow': items auto-size their height and flow naturally across pages without slicing.</para>
     /// <para>- 'exact': uses CSS grid to perfectly respect visual coordinates and dimensions, but may slice tall items or push entire rows to the next page.</para> 
     /// </summary>
+    [Obsolete("No longer supported starting version 13.2.0")]
     [JsonPropertyName("printMode")]
     public string? PrintMode { get; set; }
 

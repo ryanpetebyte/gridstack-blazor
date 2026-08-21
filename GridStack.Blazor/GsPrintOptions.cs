@@ -22,4 +22,10 @@ public sealed record GsPrintOptions
     /// </summary>
     [JsonPropertyName("pageBreak")]
     public bool? PageBreak { get; set; }
+
+    /// <summary>
+    /// Application specific print options for a given widget
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
 }

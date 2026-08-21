@@ -91,9 +91,8 @@
         AcceptWidgetCallback = AcceptWidgets,
         Resizable = new()
         {
-            Handles = "e,w,s",
-        },
-        PrintMode = "exact"
+            Handles = "nw,e,se,w,s,sw",
+        }
     };
 
     private readonly GsSetupDragInSettings _dragInSettings = new()
@@ -104,6 +103,10 @@
     private GsGrid _grid = null!;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+    }
+
+    private async Task OnResize(GsWidgetEventArgs args)
     {
     }
 
